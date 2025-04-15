@@ -40,7 +40,9 @@ git clone https://github.com/xiaorouji/openwrt-passwall --depth=1 package/passwa
 git clone https://github.com/xiaorouji/openwrt-passwall2 --depth=1 package/passwall2
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
-   
+
+# 科学插件的依赖
+git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
 
 # 增加 alist （在 ./scripts/feeds install -a 操作之后更换 golang 版本）
 #rm -rf feeds/packages/lang/golang
