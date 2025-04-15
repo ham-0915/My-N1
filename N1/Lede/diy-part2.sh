@@ -34,9 +34,11 @@ sed -i 's/<%:Down%>/<%:Move down%>/g' feeds/luci/modules/luci-compat/luasrc/view
 # 拉取passwall
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview}
+rm -rf feeds/luci/applications/{nikki,luci-app-nikki,luci-i18n-nikki-zh-cn}
+git clone https://github.com/nikkinikki-org/OpenWrt-nikki --depth=1 package/nikki
 git clone https://github.com/xiaorouji/openwrt-passwall --depth=1 package/passwall
 git clone https://github.com/xiaorouji/openwrt-passwall2 --depth=1 package/passwall2
-git clone https://github.com/xiaorouji/openwrt-passwall-packages
+git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
    
 
