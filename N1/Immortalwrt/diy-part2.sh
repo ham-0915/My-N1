@@ -8,6 +8,7 @@ sed -i 's/ImmortalWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 # Add packages
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/packages/net/{xray-core,v2ray-geodata,sing-box,chinadns-ng,dns2socks,hysteria,ipt2socks,microsocks,naiveproxy,shadowsocks-libev,shadowsocks-rust,shadowsocksr-libev,simple-obfs,tcping,trojan-plus,tuic-client,v2ray-plugin,xray-plugin,geoview}
+rm -rf feeds/luci/applications/{lucky,luci-i18n-lucky-zh-cn,luci-app-lucky}
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 git clone https://github.com/xiaorouji/openwrt-passwall --depth=1 package/passwall
 git clone https://github.com/xiaorouji/openwrt-passwall2 --depth=1 package/passwall2
