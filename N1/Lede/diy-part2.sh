@@ -41,9 +41,9 @@ git clone https://github.com/xiaorouji/openwrt-passwall2 --depth=1 package/passw
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/passwall-packages
 git clone https://github.com/gdy666/luci-app-lucky.git package/lucky
 
-# 升级Dnsmasq
-rm -rf package/network/services/dnsmasq
-wget https://thekelleys.org.uk/dnsmasq/dnsmasq-2.91.tar.gz && tar -xzvf dnsmasq-2.91.tar.gz -C package/network/services/
+# 升级Dnsmasq-测试失败
+#rm -rf package/network/services/dnsmasq
+#wget https://thekelleys.org.uk/dnsmasq/dnsmasq-2.91.tar.gz && tar -xzvf dnsmasq-2.91.tar.gz -C package/network/services/
 
 # 科学插件的依赖-备用
 #git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
