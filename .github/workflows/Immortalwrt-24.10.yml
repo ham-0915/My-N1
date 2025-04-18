@@ -1,4 +1,4 @@
-name: my-Immortalwrt-24.10
+name: Immortalwrt-24.10
 
 on:
   repository_dispatch:
@@ -187,5 +187,18 @@ jobs:
               密码：password
 
               更新说明：
-              2025-0418：更换kiss-config文件，再次测试。
-        
+              2025-0418：更新config文件，支持WiFi pppoe。
+              
+    - name: 删除运行记录
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        retain_days: 3
+        keep_minimum_runs: 5
+        token: ${{ env.GITHUB_TOKEN }}
+
+    - name: 删除自动发布的旧固件
+      uses: dev-drprasad/delete-older-releases@master
+      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      with:
+        keep_latest: 7
+        delete_tags : true    
