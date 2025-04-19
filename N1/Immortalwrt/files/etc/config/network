@@ -20,5 +20,5 @@ config interface 'lan'
 	option ipaddr '192.168.123.2'
 	option netmask '255.255.255.0'
 	option gateway '192.168.123.1'
-	list dns '210.22.70.225'
+	list dns '119.29.29.29'
 
